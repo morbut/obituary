@@ -8,12 +8,17 @@
     <meta property="og:image" content="https://benjaminsparkmemorialchapel.ca/wp-content/uploads/2026/09/LIPSZYC-Rose-aspect-ratio-1219-1707-345x483.jpg" />
     <meta property="og:type" content="article" />
     
-    <!-- Automatically forces the browser to jump to the real page -->
-    <meta http-equiv="refresh" content="0;url=https://benjaminsparkmemorialchapel.ca/ServiceDetails?snum=142303" />
+    
 </head>
 <body>
-    <script>
-        window.location.href = "https://benjaminsparkmemorialchapel.ca/ServiceDetails?snum=142303";
+      <script>
+        // Check if the page viewer is a social media bot
+        const isBot = /bot|crawler|spider|facebookexternalhit|facebook/i.test(navigator.userAgent);
+        
+        // Only redirect if a REAL human is visiting the page
+        if (!isBot) {
+            window.location.href = "https://benjaminsparkmemorialchapel.ca";
+        }
     </script>
 </body>
 </html>
